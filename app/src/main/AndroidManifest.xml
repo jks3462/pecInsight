@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jaskirat.pec">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:noHistory="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".fbLoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="com.facebook.sdk.ApplicationId"
+                android:value="174305896409930" />
+
+            <activity
+                android:name="com.facebook.FacebookActivity"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait" />
+
+            <provider
+                android:name="com.facebook.FacebookContentProvider"
+                android:authorities="com.facebook.app.FacebookContentProvider"
+                android:exported="true" />
+
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AdminLogin" />
+        <activity
+            android:name=".DialogActivity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity android:name=".AdminHome" />
+        <activity android:name=".ClubHome" />
+        <activity android:name=".applyForm" />
+        <activity android:name=".MyActivities" />
+        <activity android:name=".EnterSid" />
+        <activity android:name=".EnterSID" />
+        <activity android:name=".CurrentScore" />
+        <activity android:name=".list_rows"></activity>
+    </application>
+
+</manifest>

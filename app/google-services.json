@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "87830401036",
+    "project_id": "finalcapstone-bb139"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87830401036:android:bbb44dd7fd607723",
+        "android_client_info": {
+          "package_name": "com.example.jaskirat.pec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87830401036-9aglb44q4arorpgtifj7dg3q3j6e2mtd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jaskirat.pec",
+            "certificate_hash": "9dfc6ad93d1fdae3e4e1065b64f01e20e6f3bbd8"
+          }
+        },
+        {
+          "client_id": "87830401036-21m1rcleedniv1c8aibnutqedc66msr7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeb0UtRSJSYL0tgXZziflZWse8WzzDW80"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.jaskirat.pec.HomeActivity"
+    android:background="@drawable/bkg">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="10dp"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:paddingBottom="50dp">
+
+
+             <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/apc"
+                 android:onClick="onClick"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                         <ImageView
+                            android:src="@drawable/apc"
+                            android:layout_width="100dp"
+                             android:background="@drawable/border"
+                                android:id="@+id/imageapc"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:paddingLeft="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/apc"
+                            android:textColor="#000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+             <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/asce"
+                 android:onClick="onClick"
+                 android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                card_view:cardCornerRadius="4dp">
+
+
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                        <ImageView
+                            android:src="@drawable/asce"
+                            android:layout_width="100dp"
+                            android:background="@drawable/border"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageasce"/>
+
+                        <TextView
+                            android:paddingLeft="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="American Society of Civil Engineers "
+                            android:textColor="#000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                </LinearLayout>
+
+             </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/communication"
+                android:onClick="onClick"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                card_view:cardCornerRadius="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/communication"
+                        android:layout_width="100dp"
+                        android:background="@drawable/border"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imagecommunication"/>
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Communication Club "
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/drams"
+                android:onClick="onClick"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                card_view:cardCornerRadius="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/drams"
+                        android:layout_width="100dp"
+                        android:background="@drawable/border"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imagedrams"/>
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Dramatics Club "
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/eic"
+                android:onClick="onClick"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                card_view:cardCornerRadius="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/eic"
+                        android:layout_width="100dp"
+                        android:background="@drawable/border"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageeic"/>
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Entrepreneurship and Incubation Cell"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ieee"
+                android:onClick="onClick"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                card_view:cardCornerRadius="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/ieee"
+                        android:layout_width="100dp"
+                        android:background="@drawable/border"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageieee"/>
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Institute of Electronics and Electrical Engineers"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iete"
+                android:onClick="onClick"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                card_view:cardCornerRadius="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/iete"
+                        android:layout_width="100dp"
+                        android:background="@drawable/border"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageiete"/>
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="The Institution of Electronics and Telecommunication Engineers"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/music"
+                android:onClick="onClick"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                card_view:cardCornerRadius="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/music"
+                        android:layout_width="100dp"
+                        android:background="@drawable/border"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imagemusic"/>
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Music Club"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/pdc"
+                android:onClick="onClick"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                card_view:cardCornerRadius="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/pdc"
+                        android:layout_width="100dp"
+                        android:background="@drawable/border"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imagepdc"/>
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Projection And Design Club"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/pecsitt"
+                android:onClick="onClick"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                card_view:cardCornerRadius="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/pecsitt"
+                        android:layout_width="100dp"
+                        android:background="@drawable/border"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imagepecsitt"/>
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="PEC Student IT Team"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ped"
+                android:onClick="onClick"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                card_view:cardCornerRadius="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/ped"
+                        android:layout_width="100dp"
+                        android:background="@drawable/border"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageped"/>
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Punjab Editorial Board"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/robotics"
+                android:onClick="onClick"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                card_view:cardCornerRadius="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/robotics"
+                        android:layout_width="100dp"
+                        android:background="@drawable/border"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imagerobotics"/>
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Robotics Society"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rotoract"
+                android:onClick="onClick"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                card_view:cardCornerRadius="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/rotoract"
+                        android:layout_width="100dp"
+                        android:background="@drawable/border"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imagerotoract"/>
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Rotoract"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/saasc"
+                android:onClick="onClick"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                card_view:cardCornerRadius="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/saasc"
+                        android:layout_width="100dp"
+                        android:background="@drawable/border"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imagesaasc"/>
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Speakers Association And Study Circle"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/scc"
+                android:onClick="onClick"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                card_view:cardCornerRadius="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/scc"
+                        android:layout_width="100dp"
+                        android:background="@drawable/border"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imagescc"/>
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Student Counselling Cell"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/sme"
+                android:onClick="onClick"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                card_view:cardCornerRadius="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/sme"
+                        android:layout_width="100dp"
+                        android:background="@drawable/border"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imagesme"/>
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Society of Manufacturing Engineers"
+                        android:textColor="#000000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>
